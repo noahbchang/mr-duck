@@ -26,5 +26,3 @@ Notes is just a little notepad that you can refer to, handy for fullscreen appli
 Media is a set of media buttons that can pause, go back, or fast forward.
 <br>
 Clock is a clock. 
-
-

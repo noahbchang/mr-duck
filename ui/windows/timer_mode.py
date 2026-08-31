@@ -17,7 +17,7 @@ class TimerMode(QWidget):
 
         self.label = QLabel()
         self.label.setStyleSheet("""
-            background-color: rgba(255, 255, 255, 160);
+            background-color: rgba(225, 225, 225, 160);
             color: rgba(0, 0, 0, 255);
             border-radius: 12px;
             padding: 8px;
