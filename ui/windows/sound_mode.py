@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QVBoxLayout, QPushButton
+from PySide6.QtWidgets import QHBoxLayout, QPushButton
 from PySide6.QtCore import QPropertyAnimation, QEasingCurve
 from ui.base_mode_window import BaseModeWindow
 import ctypes
@@ -17,7 +17,7 @@ def send_media_key(vk_code):
 class SoundMode(BaseModeWindow):
     def __init__(self):
         super().__init__()
-        layout = QVBoxLayout(self)
+        layout = QHBoxLayout(self)
         self.button_style = """
             font-size: 22px;
             background-color: rgba(255, 255, 255, 160);
