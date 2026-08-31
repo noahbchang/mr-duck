@@ -1,7 +1,6 @@
 class ModeManager:
     def __init__(self):
         self.active_mode = None
-        self.notes_text = ""
 
     def set_mode(self, mode_window):
         if self.active_mode:
