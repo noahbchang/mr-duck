@@ -46,6 +46,9 @@ class App:
         mode_window = cls()
         x = self.character.x() - 260
         y = self.character.y() - 40
+        if mode_name == "timer":
+            x = self.character.x() - 180
+            y = self.character.y() + 60
         mode_window.move(x, y)
         mode_manager.set_mode(mode_window)
 

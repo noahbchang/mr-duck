@@ -92,11 +92,6 @@ class ThoughtBubble(QWidget):
         event_bus.emit("close_bubbles")
         self.close()
 
-
-    
-
-
-
 class ConnectorBubble(QWidget):
     def __init__(self, bubble_path, base_pos, amplitude=2.0, speed=0.1):
         super().__init__()

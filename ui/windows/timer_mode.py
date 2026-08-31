@@ -25,13 +25,10 @@ class TimerMode(QWidget):
             font-size: 20px;
         """)
         layout.addWidget(self.label)
-
         self.clock_timer = QTimer()
         self.clock_timer.timeout.connect(self.update_clock)
         self.clock_timer.start(1000)
-
         self.update_clock()
-        self.move(10, 19)
 
     def update_clock(self):
         now = QTime.currentTime()
