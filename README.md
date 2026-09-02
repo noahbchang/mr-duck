@@ -21,8 +21,8 @@ By clicking on him with your mouse, a menu will open up that provides three diff
     <em>What to do...</em>
 </p>
 
-Notes is just a little notepad that you can refer to, handy for fullscreen applications so you don't have to tab back and forth for some text.
+Notes is just a little notepad that you can refer to, handy for fullscreen applications so you don't have to tab back and forth for some text. Supports file input and output through .txt files stores in the "notes" folder.
 <br>
 Media is a set of media buttons that can pause, go back, or fast forward.
 <br>
-Clock is a clock. 
+Clock is a clock. Not much more to say there.
