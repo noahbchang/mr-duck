@@ -20,7 +20,7 @@ class SoundMode(BaseModeWindow):
         layout = QHBoxLayout(self)
         self.button_style = """
             font-size: 22px;
-            background-color: rgba(255, 255, 255, 160);
+            background-color: rgba(225, 225, 225, 160);
             border-radius: 10px;
             padding: 6px;
         """
