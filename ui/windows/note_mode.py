@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QVBoxLayout, QTextEdit, QHBoxLayout, QLabel, QPushButton, QMenu, QFileDialog
+from PySide6.QtWidgets import QVBoxLayout, QTextEdit, QHBoxLayout, QPushButton, QMenu, QFileDialog
 from ui.base_mode_window import BaseModeWindow
 import os
 
@@ -18,7 +18,7 @@ class NotesMode(BaseModeWindow):
                     padding: 8px;
                     """)  
         self.editor.setPlainText(mode_manager.notes_text)
-        layout.addWidget(self.editor, stretch = 1)
+        layout.addWidget(self.editor)
 
         buttons = QHBoxLayout()
         save_as = QPushButton("Save As")
@@ -40,7 +40,7 @@ class NotesMode(BaseModeWindow):
         save_as.setStyleSheet(style)
         open_file.setStyleSheet(style)
         font_size.setStyleSheet(style)
-        layout.addLayout(buttons, stretch = 0)
+        layout.addLayout(buttons)
 
         self.resize(260, 180)
 

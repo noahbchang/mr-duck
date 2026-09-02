@@ -17,7 +17,7 @@ def send_media_key(vk_code):
 class SoundMode(BaseModeWindow):
     def __init__(self):
         super().__init__()
-        layout = QHBoxLayout(self)
+        buttons = QHBoxLayout(self)
         self.button_style = """
             font-size: 22px;
             background-color: rgba(225, 225, 225, 160);
@@ -32,9 +32,9 @@ class SoundMode(BaseModeWindow):
         btn_pause.setStyleSheet(self.button_style)
         btn_next.setStyleSheet(self.button_style)
 
-        layout.addWidget(btn_prev)
-        layout.addWidget(btn_pause)
-        layout.addWidget(btn_next)
+        buttons.addWidget(btn_prev)
+        buttons.addWidget(btn_pause)
+        buttons.addWidget(btn_next)
         btn_prev.clicked.connect(lambda: (self.animate_press(btn_prev), send_media_key(VK_MEDIA_PREV_TRACK)))
         btn_pause.clicked.connect(lambda: (self.animate_press(btn_pause), send_media_key(VK_MEDIA_PLAY_PAUSE)))
         btn_next.clicked.connect(lambda: (self.animate_press(btn_next), send_media_key(VK_MEDIA_NEXT_TRACK)))
